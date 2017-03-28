@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Boostrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	{% block head %}
+	<title>Dale Mallette</title>
+	{% endblock %}
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar">
+		<div class="container-fluid">
+			<div class="navbar-inner">
+				<ul>
+					<li><strong>Dale Mallette</strong></li>
+					<li><strong>Projects</strong> </li>
+				</ul>
+			</div> <!-- inner -->
+		</div>
+
+	</nav>
+
+	<div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %}
+      {% endblock %}
+
+
+</body>
+</html>
