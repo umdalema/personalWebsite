@@ -14,7 +14,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="/~dalema/css/base.css">
-	<!-- <link rel="stylesheet" type="text/css" href="/~dalema/Projects.css"> -->
+	<link rel="stylesheet" type="text/css" href="/~dalema/css/projects.css"> 
 
 
 	</style>
@@ -22,20 +22,40 @@
 
 <body>
 
-			<nav class="navbar navbar-default navbar-fixed-top">
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="container nav center">
-			      <ul class="nav navbar-inner">
-			        <li class="nav"><a href="/~dalema/index.html">Home <span class="sr-only"></span></a></li>
-			        <li class="nav"><a href="http://www-personal.umich.edu/~dalema/projects.html">Projects</a></li>
-			        <!-- fix download link -->
-			        <li class="nav"><a href="/~dalema/resume.html">Resume</a></li>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="container nav center">
+		      <ul class="nav navbar-inner">
+		        <li class="nav"><a href="/~dalema/index.html">Home <span class="sr-only"></span></a></li>
+		        <li class="nav"><a href="http://www-personal.umich.edu/~dalema/projects.html">Projects</a></li>
+		        <!-- fix download link -->
+		        <li class="nav"><a href="/~dalema/resume.html">Resume</a></li>
 
-			      </ul>
-			    </div><!-- /.navbar-inner -->
+		      </ul>
+		    </div><!-- /.navbar-inner -->
 		</nav>
 
-	<p> This Page is under construction!</p>
+		
+
+		<div class="container">
+
+			<div class="panel panel-defualt">
+				<!-- RMP Web Scraper -->
+				<h2>Rate My Professor Web Scrapper</h2>
+				<p> Python script that uses requests and BeautifulSoup4  python libaries to allow users to scrape search results from ratemyprofessor.com. 
+				<br><br>
+				Given a name to search for, the program attempts to find data on ratemyprofessor.com for any professor at the University of Michigan that matches the given name. Results are based on the results that ratemyprofessor.com would give if you searched on the site directly using the same name. 
+				<br><br>
+				Users are prompted to input a search name and the script will page through all the results to find any University of Michigan professor returned by the search. 
+				<br><br>
+				As an example: Given the name 'Jones' to search for the program would return:
+				</p>
+				<img src="/~dalema/images/RMPscrape_py_resultsPhoto.png" align="center">
+
+				
+			</div> <!-- Pannel -->
+		</div>
+
 
 
 

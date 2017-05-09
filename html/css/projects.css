@@ -1,10 +1,8 @@
 
-body {
-			text-align: center;
-			font-size: 50px; 
-			color: blue; 
-}
 
-p{
-	//color: #ffffff; 
+
+img {
+	height: 50%;   
+	width: 50%;
+	align-self: center;
 }
