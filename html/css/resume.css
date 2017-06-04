@@ -9,7 +9,13 @@ h4{
 	padding: 5px; 
 	margin: 0px; 
 }
+.glyphicon{
+	flex-wrap: all;
+}
 
+.test {
+	display: inline;
+}
 
 p {
 	margin: 0px; 
@@ -27,6 +33,19 @@ span.category {
 	font-weight: bold; 
 }
 
-.panel {
-	/*background-color: #DFE6E3; */
+
+.card-title {
+	text-align: center;
+	font-style: italic;
+}
+.card {	
+	//background-color: #000; 
+	//color: #faebd7;
+	opacity: .95; 
+		display: block;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        width: 60%;
+       border: 3px dotted;
 }

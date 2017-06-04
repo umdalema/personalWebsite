@@ -1,5 +1,5 @@
 body {
-	background-color: #D4C7B7;
+	background-color: #faebd7;
 	/* #00274c; hex for offical u of m blue */
 	/* keeps body content from overlapping with the navbar */
 	padding-top: 75px; 
@@ -20,8 +20,8 @@ ul.nav {
 	text-align: center;
 	list-style-type: none;
 	position: fixed;
-	background-color: #D4C7B7;
-	border-color: #D4C7B7;
+	background-color: #faebd7;
+	box-shadow: 5px;
 	width: 100%; 
 	left: 0;
 	top: 0; 

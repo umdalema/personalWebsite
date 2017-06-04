@@ -13,49 +13,40 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
-	<link rel="stylesheet" type="text/css" href="/~dalema/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/~dalema/css/projects.css"> 
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/projects.css"> 
 
-
+	<script type="text/javascript" src="../static/game.js"></script>
 	</style>
 </head>
 
-<body>
+<body onload="startGame()">
 
-		<nav class="navbar navbar-default navbar-fixed-top">
-		    <!-- Collect the nav links, forms, and other content for toggling -->
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-default navbar-fixed-top">
 		    <div class="container nav center">
 		      <ul class="nav navbar-inner">
-		        <li class="nav"><a href="/~dalema/index.html">Home <span class="sr-only"></span></a></li>
-		        <li class="nav"><a href="http://www-personal.umich.edu/~dalema/projects.html">Projects</a></li>
-		        <!-- fix download link -->
-		        <li class="nav"><a href="/~dalema/resume.html">Resume</a></li>
-
+		        <li class="nav"><a href="./index.html">Home <span class="sr-only"></span></a></li>
+		        <li class="nav"><a href="/~dalema/projects.html">Projects</a></li>
+		        <li class="nav"><a href="./resumeTrySomething.html">Resume</a></li>
 		      </ul>
 		    </div><!-- /.navbar-inner -->
-		</nav>
-
+	</nav>
 		
+	<div class="container-fluid card">
+		<h1 class="card-title center-block">JavaScript Tic-Tac Toe</h1> 
+		<canvas id="canvas"></canvas>
+		<p> 
+			<span id="scores">
+				Player 1 Score: <span id="X_score">0</span> <br>
+			    Player 2 Score: <span id="O_score">0</span> <br>
+			</span>
+		    <a style="font-style: italic;" href="https://github.com/umdalema/jsConnectFour"> You can check out the code here!
+		    <span class="glyphicon glyphicon-hand-right"></span></a>
 
-		<div class="container">
-
-			<div class="panel panel-defualt">
-				<!-- RMP Web Scraper -->
-				<h2>Rate My Professor Web Scrapper</h2>
-				<p> Python script that uses requests and BeautifulSoup4  python libaries to allow users to scrape search results from ratemyprofessor.com. 
-				<br><br>
-				Given a name to search for, the program attempts to find data on ratemyprofessor.com for any professor at the University of Michigan that matches the given name. Results are based on the results that ratemyprofessor.com would give if you searched on the site directly using the same name. 
-				<br><br>
-				Users are prompted to input a search name and the script will page through all the results to find any University of Michigan professor returned by the search. 
-				<br><br>
-				As an example: Given the name 'Jones' to search for the program would return:
-				</p>
-				<img src="/~dalema/images/RMPscrape_py_resultsPhoto.png" align="center">
-
-				
-			</div> <!-- Pannel -->
-		</div>
-
+	   	</p>
+	   
+	</div>
 
 
 
