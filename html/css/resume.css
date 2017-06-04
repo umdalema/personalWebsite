@@ -1,20 +1,11 @@
-h2.section-title{
-	//text-align: center;
-	/*color: #ffffff; */
-	color: #ffcb05; 
-	font-weight: bold;
 
-}
 h4{
 	padding: 5px; 
 	margin: 0px; 
+	//color: #f19f4d;
 }
 .glyphicon{
 	flex-wrap: all;
-}
-
-.test {
-	display: inline;
 }
 
 p {
@@ -37,15 +28,27 @@ span.category {
 .card-title {
 	text-align: center;
 	font-style: italic;
+	color: #4484ce; 
+	font-weight: bold;
 }
+.card-subtitle{
+	//color: #f19f4d;
+}
+
 .card {	
 	//background-color: #000; 
-	//color: #faebd7;
+	//color: #f19f4d;
 	opacity: .95; 
-		display: block;
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-        width: 60%;
-       border: 3px dotted;
+	display: block;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    width: 60%;
+    //border: 3px dotted;
+}
+
+li {
+		//color: #f19f4d;
+
+
 }
