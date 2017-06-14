@@ -23,7 +23,7 @@ var Navbar = React.createClass({
 					"ul",
 					{ className: "nav navbar-inner" },
 					React.createElement(NavbarList, { link: "/~dalema/index.html", text: "Home" }),
-					React.createElement(NavbarList, { link: "/~dalema/project.html", text: "Project" }),
+					React.createElement(NavbarList, { link: "/~dalema/projects.html", text: "Project" }),
 					React.createElement(NavbarList, { link: "/~dalema/resumeTrySomething.html", text: "Resume" })
 				)
 			)
