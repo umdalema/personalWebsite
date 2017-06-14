@@ -1,4 +1,16 @@
-
+var NavbarList = React.createClass({
+	render: function () {
+		return React.createElement(
+			"li",
+			{ className: "nav" },
+			React.createElement(
+				"a",
+				{ href: this.props.link },
+				this.props.text
+			)
+		);
+	}
+});
 var Navbar = React.createClass({
 	render: function () {
 		return React.createElement(
@@ -10,34 +22,9 @@ var Navbar = React.createClass({
 				React.createElement(
 					"ul",
 					{ className: "nav navbar-inner" },
-					React.createElement(
-						"li",
-						{ className: "nav" },
-						React.createElement(
-							"a",
-							{ href: "/~dalema/index.html" },
-							"Home ",
-							React.createElement("span", { "class": "sr-only" })
-						)
-					),
-					React.createElement(
-						"li",
-						{ className: "nav" },
-						React.createElement(
-							"a",
-							{ href: "/~dalema/projects.html" },
-							"Projects"
-						)
-					),
-					React.createElement(
-						"li",
-						{ className: "nav" },
-						React.createElement(
-							"a",
-							{ href: "/~dalema/resumeTrySomething.html" },
-							"Resume"
-						)
-					)
+					React.createElement(NavbarList, { link: "/~dalema/index.html", text: "Home" }),
+					React.createElement(NavbarList, { link: "/~dalema/project.html", text: "Project" }),
+					React.createElement(NavbarList, { link: "/~dalema/resumeTrySomething.html", text: "Resume" })
 				)
 			)
 		);
@@ -45,5 +32,6 @@ var Navbar = React.createClass({
 });
 
 $().ready(function () {
+	alert('in nav');
 	React.render(React.createElement(Navbar, null), document.getElementById('navBarDiv'));
 });
