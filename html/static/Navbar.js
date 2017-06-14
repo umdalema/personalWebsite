@@ -32,6 +32,5 @@ var Navbar = React.createClass({
 });
 
 $().ready(function () {
-	alert('in nav');
 	React.render(React.createElement(Navbar, null), document.getElementById('navBarDiv'));
 });
