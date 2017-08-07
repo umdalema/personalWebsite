@@ -2,52 +2,98 @@
 
 <head>
 	<title>Dale Mallette</title>
-	<!-- Style Links -->
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- jQuery Links -->
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- END jQuery Links -->
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Bootstrap Links -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="/~dalema/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/~dalema/css/projects.css"> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- END Bootstrap Links -->
+
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/projects.css"> 
         
 	<!-- Need to include the jquery code for tic-tac-toe to work -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js'></script>
-	<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script type="text/javascript" src="./static/Navbar.js"></script>
 	
-	<script type="text/javascript" src="/~dalema/static/game.js"></script>
+	<script type="text/javascript" src="./static/game.js"></script>
 
+	<style type="text/css">
+		
+		
+		
 	</style>
 </head>
 
-<body onload="startGame()">
+<body onload="startGame()" style="height: 100%;">
 
-	<!-- NAVBAR -->
-	<div id="navBarDiv"></div>
-	<!-- END NAVBAR -->
 
-		
-	<div class="container-fluid card">
-		<h1 class="card-title center-block">JavaScript Tic-Tac Toe</h1> 
-		<canvas id="canvas"></canvas>
-		<p> 
-			<span id="scores">
-				Player 1 Score: <span id="X_score">0</span> <br>
-			    Player 2 Score: <span id="O_score">0</span> <br>
-			</span>
-		    <a style="font-style: italic;" href="https://github.com/umdalema/jsConnectFour"> You can check out the code here!
-		    <span class="glyphicon glyphicon-hand-right"></span></a>
 
-	   	</p>
-	   
+	<div class="container-fluid">
+
+		<div class="row">
+			<!-- NAVBAR -->
+				<div id="navBarDiv"></div>
+			<!-- END NAVBAR -->
+		</div>
+
+		<div class="row" >
+
+			<div class="col-sm-3 left">
+				<div class="list-group">
+					<h1>Projects: </h1>
+					<a class="list-group-item" href="#jsTicTacToe">JavaScript Tic-Tac Toe</a>
+					<a class="list-group-item" href="#rmpScrapper">RateMyProfessor Web Scrapper</a>
+				</div>
+			</div>
+
+			
+
+			<div class="col-sm-9 right">
+				<div class="card" id="jsTicTacToe">
+					<h1 class="card-title center-block">JavaScript Tic-Tac Toe</h1> 
+					<canvas id="canvas"></canvas>
+					<p > 
+						<span id="scores">
+							Player 1 Score: <span id="X_score">0</span> <br>
+						    Player 2 Score: <span id="O_score">0</span> <br>
+						</span>
+					    <a style="font-style: italic;" href="https://github.com/umdalema/jsConnectFour"> You can check out the code here!
+					    <span class="glyphicon glyphicon-hand-right"></span></a>
+
+				   	</p>
+				   
+				</div>
+
+				<div class="card" id="rmpScrapper">
+					<h1 class="card-title center-block">RateMyProfessor Web Scrapper</h1> 
+					<p>
+
+						While I value the information on RateMyProfessor.com, I find the user interface very cumbersome. I 
+						wanted to specific information about professors at the University of Michigan, so I wrote a program to give me only that information. Written in Python, the program allows you to search RateMyProfessor.com and displays the "Overall Quality", "Would Take Again", and "Level of Difficulty" scores for any professor that was listed as a University of Michigan, Ann Arbor professor in the search results. Below is an example of the search results. Per the request of Rate My Professor, the code has been taken off of my GitHub.
+					</p>
+
+					<img src="./images/RMPscrape_py_resultsPhoto.png">
+
+				   
+				</div>
+
+
+			</div>
+		</div>
 	</div>
 
+
+	
 
 
 </body>

@@ -24,6 +24,16 @@ span.category {
 	font-weight: bold; 
 }
 
+.bulletPoint::before {
+	content: ''; 
+	float: left;
+
+}
+.bulletPoint {
+	list-style-type: none;
+}
+
+
 
 .card-title {
 	text-align: center;

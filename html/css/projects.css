@@ -1,36 +1,57 @@
 canvas {
-    		border: 1px solid #d3d3d3;
-    		background-color: #f1f1f1;
-		}
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
 
-		.center-block {
-		   margin-left:auto;
-		   margin-right:auto;
-		   display:block;
-		}
+::-webkit-scrollbar {
+	display: none;
+}
+img {
+	max-height: 100%;
+	max-width: 100%;
 
+	width: 50%;
+	height: 50%;
+}
 
-
-		.card {	
-			opacity: .95; 
-			display: block;
-	        margin: 0 auto; /* Added */
-	        float: none; /* Added */
-	        margin-bottom: 10px; /* Added */
-	        width: 80%;
-	        /*border: 3px dotted;*/
-		}
-		.card-title {
-			text-align: center;
-		}
+.card-title {
+	text-align: center;
+}
 
 #scores {
-			font-size: 50px; 
+	font-size: 50px; 
+	text-align: center;
+}
+
+#jsTicTacToe p {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2%;
+}
+#rmpScrapper {
+	text-align: center;
+}
+
+.left, .list-group-item {
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align: center;
+	//position: fixed;
+}
+
+.right {
+	padding-left: 0%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	//position: fixed;
+	height: 90vh;
+	overflow-y: scroll;
 }
 
 p {
-	text-align: left;
-	display: inline-block;
-	vertical-align: top;
-
+	font-size: 20px;
+	text-align: justify;
 }
+
+
+
