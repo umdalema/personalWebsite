@@ -8,6 +8,10 @@ h4{
 	flex-wrap: all;
 }
 
+#relevant-courses{
+	margin-top: -10px;
+}
+
 p {
 	margin: 0px; 
 	margin-left: 5px; 
@@ -25,12 +29,19 @@ span.category {
 }
 
 .bulletPoint::before {
-	content: ''; 
-	float: left;
-
+	content: "\e080"; 
+	font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    //position: relative;
+    float: left;
+    margin-top: 5px;
+    margin-left: -12px;
 }
 .bulletPoint {
 	list-style-type: none;
+	margin-left:-25px;
+	text-align: justify;
+	/* font-size: 16px; */
 }
 
 
@@ -57,8 +68,3 @@ span.category {
     //border: 3px dotted;
 }
 
-li {
-		//color: #f19f4d;
-
-
-}
